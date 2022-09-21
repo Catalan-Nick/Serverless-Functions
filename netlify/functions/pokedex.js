@@ -9,7 +9,7 @@ exports.handler = async function () {
     return{
         statusCode:200,
         body: JSON.stringify({
-            pokemon: data.pokemon_entries
+            pokemon: data.pokemon_entries[0]
         })
     }
 }
