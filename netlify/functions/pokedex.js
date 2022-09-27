@@ -11,7 +11,7 @@ export const handler = async (event, context) => {
     return{
         statusCode:200,
         body: JSON.stringify({
-            pokemon: data.pokemon_entries[0]
+            pokemon: data.pokemon_entries
         })
     }
 }

@@ -1,0 +1,17 @@
+.text-outline{
+    color: white;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				 1px -1px 2px #000,
+				-1px -1px 2px #000;
+}
+li:hover{
+    background-color: aqua;
+    transition: 1s ease;
+}
+
+.drop-shadow {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+ }
