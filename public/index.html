@@ -21,24 +21,27 @@
     </header>
 
     <div class="d-flex flex-row">
-      <nav class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 20%">
+      <nav class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 25%">
         <div class="d-flex justify-content-center">
           <img class="w-25"src="https://www.pngkey.com/png/full/1-16475_pokeball-png-free-download-pokemon-center.png" alt="Pokeball">
         </div>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">
-              <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+            <button class="text-white bg-primary w-100 text-outline rounded" id="home-btn">
               Home
-            </a>
+            </button>
           </li>
           <li>
-              <button class="text-white bg-transparent w-100 text-outline" id="fetch-kanto-btn">Fetch Kanto Pokedex</button>
+              <button class="text-white bg-transparent w-100 text-outline rounded" id="fetch-kanto-btn">Kanto Pokedex</button>
           </li>
           <li>
-            <button class="text-white bg-transparent w-100 text-outline" id="fetch-hoenn-btn">Fetch Hoenn Pokedex</button>
+            <button class="text-white bg-transparent w-100 text-outline rounded" id="fetch-hoenn-btn">Hoenn Pokedex</button>
           </li>
+          <li>
+            <button class="text-white bg-transparent w-100 text-outline rounded" id="fetch-johto-btn">Johto Pokedex</button>
+          </li>
+          
           <!-- <li>
             <a href="#" class="nav-link text-white">
               <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
@@ -75,7 +78,7 @@
       </nav>
 
       <div class="d-flex drop-shadow p-3 " style="width: 80%">
-        <div id="response-output">
+        <div class="row" id="response-output">
 
         </div>
       </div>
@@ -83,10 +86,6 @@
 
 
 
-
-    <button id="fetch-btn">Fetch</button>
-    
-    
     
     <script src="index.js">
     </script>
