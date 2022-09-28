@@ -5,24 +5,27 @@
         const fetchKantoBtn = document.getElementById('fetch-kanto-btn');
         const fetchHoennBtn = document.getElementById('fetch-hoenn-btn');
         const fetchJohtoBtn = document.getElementById('fetch-johto-btn');
+        const fetchSinnohBtn = document.getElementById('sinnoh-btn');
+        const fetchUnovaBtn = document.getElementById('unova-btn');
+        const fetchAlolaBtn = document.getElementById('alola-btn');
         const responseText = document.getElementById('response-output');
         
+        //gets a pokemons info by name
        async function getPokeData(name){
         const url = "https://pokeapi.co/api/v2/pokemon/" + name
         const response = await fetch(url)
         const data = await response.json();
-        // console.log(data.sprites.front_default)
+         console.log(data)
 
          return data;
         }
-
+        // dynamically creates cards for each pokemon in selected region
         async function display(object){
           const responseName = JSON.stringify(object.pokemon_species.name);
           const pokeName = responseName.replaceAll('"', '')
           const responseUrl = JSON.stringify(object.pokemon_species.url);
           
           const pokeData = await getPokeData(pokeName);
-          console.log(pokeData)
           
           const card = document.createElement('div');
           const cardImg = document.createElement('img');
@@ -31,29 +34,23 @@
           const cardText = document.createElement('p');
           const cardLink = document.createElement('a');
 
-          card.classList.add("card", "card-color", "m-2", "col-sm-3", "bg-dark");
+          card.classList.add("card", "m-2", "col-sm-3", "bg-card");
           cardImg.classList.add("card-img-top");
-          cardBody.classList.add("card-body", "bg-danger");
+          cardBody.classList.add("card-body", "bg-danger", "rounded", "mb-2");
           cardTitle.classList.add("card-title", "text-outline");
           cardText.classList.add("card-text");
-          cardLink.classList.add("btn", "btn-primary");
+          //cardLink.classList.add("btn", "btn-primary");
 
           cardImg.src = pokeData.sprites.front_default
-
 
           card.append(cardImg);
           card.append(cardBody);
           cardBody.append(cardTitle);
           cardBody.append(cardText);
-          cardBody.append(cardLink);
+          //cardBody.append(cardLink);
         
-
-          cardTitle.innerText = pokeName
-
-            
-
-
-
+          cardTitle.innerText = "# " + pokeData.id
+          cardText.innerText = pokeName
 
           responseText.append(card)
           
@@ -93,6 +90,48 @@
               method: 'POST',
               body: JSON.stringify({
                 region: 'original-johto'
+              })
+            }).then(response => response.json())
+  
+            const pokemon = JSON.stringify(response.pokemon)
+            const obj = JSON.parse(pokemon)
+            responseText.innerText = ""
+            obj.forEach(display);
+      
+          })
+          fetchSinnohBtn.addEventListener('click', async () => {
+            const response = await fetch('/.netlify/functions/pokedex', {
+              method: 'POST',
+              body: JSON.stringify({
+                region: 'original-sinnoh'
+              })
+            }).then(response => response.json())
+  
+            const pokemon = JSON.stringify(response.pokemon)
+            const obj = JSON.parse(pokemon)
+            responseText.innerText = ""
+            obj.forEach(display);
+      
+          })
+          fetchUnovaBtn.addEventListener('click', async () => {
+            const response = await fetch('/.netlify/functions/pokedex', {
+              method: 'POST',
+              body: JSON.stringify({
+                region: 'original-unova'
+              })
+            }).then(response => response.json())
+  
+            const pokemon = JSON.stringify(response.pokemon)
+            const obj = JSON.parse(pokemon)
+            responseText.innerText = ""
+            obj.forEach(display);
+      
+          })
+          fetchAlolaBtn.addEventListener('click', async () => {
+            const response = await fetch('/.netlify/functions/pokedex', {
+              method: 'POST',
+              body: JSON.stringify({
+                region: 'original-alola'
               })
             }).then(response => response.json())
   
