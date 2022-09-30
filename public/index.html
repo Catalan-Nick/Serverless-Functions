@@ -11,6 +11,38 @@
   </head>
   <body>
     <h3 class="text-center border-bottom">Up and Running with Serverless Functions</h3>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Navbar</a>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
     <header class=" shadow-lg">
       <h3 class="text-center text-outline">
         R.A.<span class="text-danger">P</span>.I.D.
@@ -20,69 +52,71 @@
       </h1>
     </header>
 
-    <div class="d-flex flex-row">
-      <nav class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark h-50 sticky-top navbar-expand-sm" style="width: 25%">
-        <div class="d-flex justify-content-center">
-          <img class="w-25"src="https://www.pngkey.com/png/full/1-16475_pokeball-png-free-download-pokemon-center.png" alt="Pokeball">
-        </div>
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
-            <button class="text-white bg-primary w-100 text-outline rounded" id="home-btn">
-              Home
-            </button>
-          </li>
-          <li>
-              <button class="text-white bg-transparent w-100 text-outline rounded" id="fetch-kanto-btn">Kanto Pokedex
-
-              </button>
-          </li>
-          <li>
-            <button class="text-white bg-transparent w-100 text-outline rounded" id="fetch-hoenn-btn">Hoenn Pokedex
-
-            </button>
-          </li>
-          <li>
-            <button class="text-white bg-transparent w-100 text-outline rounded" id="fetch-johto-btn">Johto Pokedex
-
-            </button>
-          </li>
-          <li>
-            <button class="text-white bg-transparent w-100 text-outline rounded" id="sinnoh-btn">Sinnoh Pokedex
-
-            </button>
-          </li>
-          <li>
-            <button class="text-white bg-transparent w-100 text-outline rounded" id="unova-btn">Unova Pokedex
-
-            </button>
-          </li>
-          <li>
-            <button class="text-white bg-transparent w-100 text-outline rounded" id="alola-btn">Alola Pokedex
-
-            </button>
-          </li>
-        </ul>
-        <hr>
-
-        <div class="dropdown show">
-          <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="https://avatars.githubusercontent.com/u/107813010?s=400&u=47026dba10ddfdaabb92f9a1aa2fc5b5a47d4dab&v=4" alt="Nicholas Catalan" width="32" height="32" class="rounded-circle me-2">
-            <strong>Nick Catalan</strong>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" style="">
-            <li><a class="dropdown-item" href="https://www.linkedin.com/in/nicholas-catalan/">LinkedIn</a></li>
-            <li><a class="dropdown-item" href="https://github.com/Catalan-Nick">Github</a></li>
-            <li>ncatalan0524@gmail.com</li>
-          </ul>
-        </div>
-      </nav>
-
+    <div class="d-flex flex-row ">
+     
       <div class="d-flex drop-shadow p-3" style="width: 80%">
         <div class="row" id="response-output">
 
         </div>
+        
+  
       </div>
+      <nav class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark h-50 sticky-top collapse" style="width: 25%">
+          <div class="d-flex justify-content-center collapse">
+            <img class="w-25"src="https://www.pngkey.com/png/full/1-16475_pokeball-png-free-download-pokemon-center.png" alt="Pokeball">
+          </div>
+          <hr class="collapse">
+          <ul class="nav nav-pills flex-column mb-auto collapse">
+            <li class="nav-item">
+              <button class="text-white bg-primary w-100 text-outline rounded" id="home-btn">
+                Home
+              </button>
+            </li>
+            <li>
+                <button class="text-white bg-transparent w-100 text-outline rounded" id="fetch-kanto-btn">Kanto Pokedex
+  
+                </button>
+            </li>
+            <li>
+              <button class="text-white bg-transparent w-100 text-outline rounded" id="fetch-hoenn-btn">Hoenn Pokedex
+  
+              </button>
+            </li>
+            <li>
+              <button class="text-white bg-transparent w-100 text-outline rounded" id="fetch-johto-btn">Johto Pokedex
+  
+              </button>
+            </li>
+            <li>
+              <button class="text-white bg-transparent w-100 text-outline rounded" id="sinnoh-btn">Sinnoh Pokedex
+  
+              </button>
+            </li>
+            <li>
+              <button class="text-white bg-transparent w-100 text-outline rounded" id="unova-btn">Unova Pokedex
+  
+              </button>
+            </li>
+            <li>
+              <button class="text-white bg-transparent w-100 text-outline rounded" id="alola-btn">Alola Pokedex
+  
+              </button>
+            </li>
+          </ul>
+          <hr class="collapse">
+  
+          <div class="dropdown show d-none d-md-flex">
+            <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="https://avatars.githubusercontent.com/u/107813010?s=400&u=47026dba10ddfdaabb92f9a1aa2fc5b5a47d4dab&v=4" alt="Nicholas Catalan" width="32" height="32" class="rounded-circle me-2">
+              <strong>Nick Catalan</strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" style="">
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/nicholas-catalan/">LinkedIn</a></li>
+              <li><a class="dropdown-item" href="https://github.com/Catalan-Nick">Github</a></li>
+              <li>ncatalan0524@gmail.com</li>
+            </ul>
+          </div>
+        </nav>
     </div>
 
 
