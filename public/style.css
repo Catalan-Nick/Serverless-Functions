@@ -14,7 +14,9 @@ li:hover{
     background-color: aqua;
     transition: 1s ease;
 }
-
+.img-small{
+    width: 25px;
+}
 .drop-shadow {
     -moz-box-shadow:    inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;

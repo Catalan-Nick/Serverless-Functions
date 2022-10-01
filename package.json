@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Catalan-Nick/Serverless-Functions#readme",
   "devDependencies": {
     "node-fetch": "^2.6.7"
+  },
+  "dependencies": {
+    "pokedex-promise-v2": "^4.0.0"
   }
 }
