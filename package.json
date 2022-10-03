@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/Catalan-Nick/Serverless-Functions/issues"
   },
-  "homepage": "https://github.com/Catalan-Nick/Serverless-Functions#readme",
+  "homepage": ".",
   "devDependencies": {
     "node-fetch": "^2.6.7"
   },
