@@ -1,10 +1,9 @@
 import fetch from 'node-fetch'
-const fetch = require("node-fetch");
 
 import Pokedex from 'pokedex-promise-v2';
 
 
-exports.handler = async function () {
+exports.handler = async event => {
     return{
         statusCode: 200,
         body: JSON.stringify({
