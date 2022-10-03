@@ -1,5 +1,4 @@
 
-const fetch = require("node-fetch");
 document.addEventListener('DOMContentLoaded', () => {
         const homeBtn = document.getElementById('home-btn');
         
