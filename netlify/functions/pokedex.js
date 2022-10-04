@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 
-export const handler = async (event, context) => {
+export const handler = async event => {
     const eventBody = JSON.parse(event.body);
     const POKE_API = 'https://pokeapi.co/api/v2/pokedex/' + eventBody.region
 

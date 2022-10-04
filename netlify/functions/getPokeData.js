@@ -5,7 +5,7 @@ import Pokedex from 'pokedex-promise-v2';
 const P = new Pokedex();
 
 
-exports.handler = async (event, context) => {
+exports.handler = async event => {
     const eventBody = JSON.parse(event.body);
     const POKE_API = 'https://pokeapi.co/api/v2/pokedex/' + eventBody.name
 
