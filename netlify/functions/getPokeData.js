@@ -1,6 +1,5 @@
 import fetch from 'node-fetch'
-import Pokedex from 'pokedex-promise-v2';
-const P = new Pokedex();
+
 
 
 exports.handler = async (event, context) => {
