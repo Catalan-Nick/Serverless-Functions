@@ -6,11 +6,18 @@
 				 1px -1px 2px #000,
 				-1px -1px 2px #000;
 }
+.color-white{
+    background-color: white;    
+}
 .text-xl-center{
     font-size: xx-large;
 }
 
 li:hover{
+    background-color: aqua;
+    transition: 1s ease;
+}
+.highlight:hover{
     background-color: aqua;
     transition: 1s ease;
 }

@@ -15,53 +15,80 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#"><img class="img-small"src="https://www.pngkey.com/png/full/1-16475_pokeball-png-free-download-pokemon-center.png" alt="Pokeball"></a>
-    
+      <a class="navbar-brand mx-2" href="#"><img class="img-small"src="https://www.pngkey.com/png/full/1-16475_pokeball-png-free-download-pokemon-center.png" alt="Pokeball"></a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
             <a class="nav-link" id="home-btn" href="#">Home</a>
           </li>
-          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Regions
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#"><button class="text-white bg-transparent w-100 rounded" id="fetch-kanto-btn">Kanto</a>
-              <a class="dropdown-item" href="#"><button class="text-white bg-transparent w-100 rounded" id="fetch-hoenn-btn">Hoenn</a>
-              <a class="dropdown-item" href="#"><button class="text-white bg-transparent w-100 rounded" id="fetch-johto-btn">Johto</a>
-              <a class="dropdown-item" href="#"><button class="text-white bg-transparent w-100 rounded" id="sinnoh-btn">Sinnoh</a>
-              <a class="dropdown-item" href="#"><button class="text-white bg-transparent w-100 rounded" id="unova-btn">Unova</a>
-              <a class="dropdown-item" href="#"><button class="text-white bg-transparent w-100 rounded" id="alola-btn">Alola</a>
+            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+             
+              <button type="button" class="dropdown-item text-center text-white text-outline border-light rounded" id="kanto-btn">
+                Kanto
+              </button>
               
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <button type="button" class="dropdown-item text-center text-white text-outline border-light rounded" id="hoenn-btn">
+                Hoenn
+              </button>
+             
+              <button type="button" class="dropdown-item text-center text-white text-outline border-light rounded" id="johto-btn">
+                Johto
+              </button>
+              
+              <button type="button" class="dropdown-item text-center text-white text-outline border-light rounded" id="sinnoh-btn">
+                Sinnoh
+              </button>
+             
+              <button type="button" class="dropdown-item text-center text-white text-outline border-light rounded" id="unova-btn">
+                Unova
+              </button>
+              
+              <button type="button" class="dropdown-item text-center text-white text-outline border-light rounded" id="alola-btn">
+                Alola
+              </button>
+              
+              <div class="dropdown-divider color-white"></div>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="img-small rounded-circle" src="https://avatars.githubusercontent.com/u/107813010?s=400&u=47026dba10ddfdaabb92f9a1aa2fc5b5a47d4dab&v=4" alt="Nicholas Catalan">Nicholas Catalan
+              </a>
+                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-center text-white text-outline border-light rounded" href="https://github.com/Catalan-Nick">
+                    GitHub
+                  </a>
+                  <a class="dropdown-item text-center text-white text-outline border-light rounded" href="https://www.linkedin.com/in/nicholas-catalan/">
+                    LinkedIn
+                  </a>
+                  <a class="dropdown-item text-center text-white text-outline border-light rounded" href="mailto:NCatalan0524@gmail.com">
+                    Email
+                  </a>
+                </div>
+              </div>
             </div>
           </li>
         </ul>
-        
       </div>
+  
+      <h3 class="text-center text-outline mx-2">
+          R.A.<span class="text-danger">P</span>.I.D.
+      </h3>
     </nav>
     <header class=" shadow-lg">
-      <h3 class="text-center text-outline">
-        R.A.<span class="text-danger">P</span>.I.D.
-      </h3>
       <h1 class="text-center text-white text-outline">
         Regional Applied <span class="text-danger">Pokemon</span> Integrated Database
       </h1>
     </header>
 
-    <div class="d-flex flex-row ">
+    <main class="d-flex flex-row ">
       <div class="d-flex drop-shadow p-3">
         <div class="row" id="response-output">
         </div>
       </div>
-    </div>
+    </main>
 
-
-
-    
     <script src="index.js">
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
