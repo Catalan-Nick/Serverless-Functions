@@ -9,7 +9,7 @@ exports.handler = async event => {
     const eventBody = JSON.parse(event.body);
     const POKE_API = 'https://pokeapi.co/api/v2/pokedex/' + eventBody.name
 
-    const response = await P.getPokemonByName(eventBody.name)
+    const response = await P.getPokemonByName('mew')
         console.log(response);
     return{
         statusCode: 200,
