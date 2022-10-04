@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // dynamically creates cards for each pokemon in selected region
         async function display(object){
-          const passedName = object.pokemon_species.name
+          
           const responseName = JSON.stringify(object.pokemon_species.name);
           const pokeName = responseName.replaceAll('"', '')
           const responseUrl = JSON.stringify(object.pokemon_species.url);
@@ -20,10 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
           //get pokemon info by name
           const pokeData = await fetch('/.netlify/functions/getPokeData', {
             method: 'POST',
-            body: JSON.stringify({
-              name: passedName
-            })
-
+            body:responseName
+          
         }).then(pokeData => pokeData.json())
           
           const pokemonInfo = pokeData.pokemon
