@@ -13,10 +13,10 @@ exports.handler = async (event, context) => {
 
     // const response = await P.getPokemonByName(eventBody.name)
     //     console.log(response);
-    return{
+    callback(null, {
         statusCode: 200,
         body: JSON.stringify({
             pokemon: data
         }),
-    }
+    })
 }

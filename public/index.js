@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // dynamically creates cards for each pokemon in selected region
         async function display(object){
           const passedName = object.pokemon_species.name
-          console.log("🚀 ~ file: index.js ~ line 16 ~ display ~ passedName", passedName)
           const responseName = JSON.stringify(object.pokemon_species.name);
           const pokeName = responseName.replaceAll('"', '')
           const responseUrl = JSON.stringify(object.pokemon_species.url);
