@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             body:responseName
           
         }).then(pokeData => pokeData.json())
-          
+        console.log("🚀 ~ file: index.js ~ line 26 ~ display ~ pokeData", pokeData)
           const pokemonInfo = pokeData.pokemon
           
           const card = document.createElement('div');
