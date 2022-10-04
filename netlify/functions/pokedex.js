@@ -7,7 +7,6 @@ export const handler = async event => {
 
     const response = await fetch(POKE_API)
     const data = await response.json()
-    console.log(data)
     return{
         statusCode:200,
         body: JSON.stringify({
