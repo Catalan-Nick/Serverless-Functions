@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
           fetchKantoBtn.addEventListener('click', async () => {
-            console.log("click")
             const response = await fetch('/.netlify/functions/pokedex', {
               method: 'POST',
               body: JSON.stringify({
@@ -65,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const pokemon = JSON.stringify(response.pokemon)
             const obj = JSON.parse(pokemon)
             responseText.innerText = ""
-            console.log("right before display")
+            console.log(obj)
             obj.forEach(display);
           })
 
