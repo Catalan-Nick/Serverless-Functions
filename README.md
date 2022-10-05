@@ -1,7 +1,7 @@
 
 # Up and Running with Serverless Functions
 
-## HTML, Javascript, CSS, Bootstrap 5
+**HTML, Javascript, CSS, Bootstrap 5**
 
 Short running synchronous functions written in JavaScript
 
