@@ -5,7 +5,7 @@ Short running synchronous functions written in JavaScript
 
 ### Deployed on Netlify
 
-serverless-by-catalan.netlify.app
+[Severless Functions] (serverless-by-catalan.netlify.app)
 
 ## HTML, Javascript, CSS, Bootstrap 5
 
