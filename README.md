@@ -15,8 +15,8 @@ These will spin up automatically when triggered by an event, handle and process 
 
 > The basic anatomy of any serverless function has three basic parts. It must export a handler asynchronous function and then return an object with a statusCode and body property, which typically has a JSON object that needs to be converted to a string using the JSON.stringify() method for the message to be read.
 
-  `export const handler = async () => {
-	return {
+	`export const handler = async () => {
+		return {
 		statusCode: 200,
 		body: JSON.stringify({
 			message: 'This is what will be returned!'
