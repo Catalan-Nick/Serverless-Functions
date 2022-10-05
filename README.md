@@ -41,5 +41,3 @@ These will spin up automatically when triggered by an event, handle and process 
 - stateless: does not maintain data
 - cold starts: referring to the time it takes to start up when a function is invoked or ephemeral containers
 
-## R.A.P.I.D.
-The front end of the website is a responsive Pokedex-like user interface, where the user can selected Regions of the Pokemon world and the different pokemon are displayed on cards with thier name and ID number.
