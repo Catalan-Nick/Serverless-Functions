@@ -1,6 +1,9 @@
 # Up and Running with Serverless Functions 
 Short running synchronous functions written in JavaScript
 
+### Deployed on Netlify
+serverless-by-catalan.netlify.app
+
 ## HTML, Javascript, CSS, Bootstrap 5
 
 Serverless functions open a world of possibilities for running on-demand, server-side code without having to run a dedicated server.<br>
@@ -16,3 +19,6 @@ Serverless functions, branded as Netlify Functions when running on Netlify, are 
 - not built for long running processes (10 sec limit)
 - stateless: does not maintain data
 - cold starts: referring to the time it takes to start up when a function is invoked or ephemeral containers
+
+## R.A.P.I.D.
+The front end of the website is a responsive Pokedex-like user interface, where the user can selected Regions of the Pokemon world and the different pokemon are displayed on cards with thier name and ID number.
