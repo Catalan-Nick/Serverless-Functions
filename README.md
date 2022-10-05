@@ -1,5 +1,7 @@
 
-# Up and Running with Serverless Functions 
+# Up and Running with Serverless Functions
+
+## HTML, Javascript, CSS, Bootstrap 5
 
 Short running synchronous functions written in JavaScript
 
@@ -7,7 +9,8 @@ Short running synchronous functions written in JavaScript
 
 [Severless Functions](serverless-by-catalan.netlify.app)
 
-## HTML, Javascript, CSS, Bootstrap 5
+## R.A.P.I.D.
+The front end of the website is a responsive Pokedex-like user interface, where the user can selected Regions of the Pokemon world and the different pokemon are displayed on cards with the names and ID numbers. The Main purpose of it is to showcase serverless functions.
 
 Serverless functions open a world of possibilities for running on-demand, server-side code without having to run a dedicated server.
 Serverless functions, branded as Netlify Functions when running on Netlify, are a way to deploy server-side code as API endpoints. 
