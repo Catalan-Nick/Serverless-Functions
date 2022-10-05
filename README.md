@@ -13,6 +13,17 @@ Serverless functions open a world of possibilities for running on-demand, server
 Serverless functions, branded as Netlify Functions when running on Netlify, are a way to deploy server-side code as API endpoints. 
 These will spin up automatically when triggered by an event, handle and process server ran code, and then spin down until the next event.
 
+> The basic anatomy of any serverless function has three basic parts. It must export a handler asynchronous function and then return an object with a statusCode and body property, which typically has a JSON object that needs to be converted to a string using the JSON.stringify() method for the message to be read.
+
+  export const handler = async () => {
+	return {
+		statusCode: 200,
+		body: JSON.stringify({
+			message: 'This is what will be returned!'
+		})
+	}
+}
+
 ### Pros
 
 - lowers barrier to entry for devs
